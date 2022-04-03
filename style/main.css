@@ -1,0 +1,153 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*, *::after , *::before {
+    box-sizing: inherit;
+}
+
+body  {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "OpenSans" sans-serif, "Raleway";
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;      
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/source-sans-pro-v19-latin-regular.woff2") format("woff2"), 
+         url("../fonts/source-sans-pro-v19-latin-regular.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url("../fonts/source-sans-pro-v19-latin-600.woff2") format("woff2"), 
+         url("../fonts/source-sans-pro-v19-latin-600.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url("../fonts/source-sans-pro-v19-latin-700.woff2") format("woff2"),
+         url("../fonts/source-sans-pro-v19-latin-700.woff") format("woff"); 
+  }
+
+/* HEADER */
+.header {
+    height: 45px;
+    padding: 6px !important;
+    border: 1px solid #000000;
+    background-color: #fff;
+}
+
+.header__input {
+    max-width: 225px;
+    height: 30px;
+    padding: 10px;
+    background-color: #F4F4F4;
+}
+
+.header__input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.0521739px;
+    color: #AEAEAE;
+}
+
+
+.header__btn {
+    width: 38px;
+    height: 30px;
+    background-color: #F4F4F4;
+}
+
+.header__content {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.0608696px;
+    color: #2481CC;
+}
+
+.header__edit::before {
+    width: 10px;
+    height: 10px;
+    background-image: url("");
+    content: "";
+}
+
+.header__time {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.0521739px;
+    color: #A9A9A9;
+}
+/* /HEADER/ */
+
+
+/* MEMBERS */
+.members {
+    margin-top: 65px;
+} 
+
+.members-list {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding-right: 10px;
+}
+
+.members-item:hover {
+    cursor: pointer;
+    background-color: #4C91C7;
+}
+
+.members__img {
+    border-radius: 50%;
+}
+
+/* MEMBERS */
+
+
+
+.footer {
+    padding: 10px;
+    border: 1px solid #000000;
+    background-color: #fff;
+}
+
+.settings {
+    border-right: 1px solid #0000;
+}
+
+.message {
+    border-left: 1px solid #0000;
+}
